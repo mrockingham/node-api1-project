@@ -1,9 +1,10 @@
 const express = require('express')
 const colors = require('colors')
-
+const cors = require('cors')
 const server = express()
 
 server.use(express.json())
+server.use(cors())
 
 let users = [
     {
